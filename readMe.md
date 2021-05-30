@@ -30,17 +30,26 @@ Types: can start with upper or lower case
 
 - syntax:
 
-````module nameOfModule {
+```module nameOfModule {
        export class NameOfClass {
            ...code...
        }
-    }```
+    }
+```
+
 - set up a refrence path to the other module:
-``` /// <reference path = "modules.ts" />```
+  ` /// <reference path = "modules.ts" />`
 
 - to combine files into a new file in the term with --out and new fileName:
-```tsc modules.ts modulesUtils.ts --out modUtil.js```
+  `tsc modules.ts modulesUtils.ts --out modUtil.js`
 
-#### Auto Compile with w/Grunt
+#### Auto Compile with w/Grunt - Setup gruntfile.js
 
-````
+- Checkout Gruntjs.com/plugins for all the plugsin available
+- look for the ts complier plugin
+- Grunt works with NPM which installs packages which work with your code, so we will start will creating an npm package,run `npm init` , after the install, a package.json file will appear.
+- next install: `npm i typescript --save` this will save and add ts to our package.json
+- next install: `npm i grunt-ts --save`
+- next install: `npm i grunt-ts-cli --save`
+- set up gruntfile.js, typescript foler and main.ts file
+- after set up of gruntfile: run `gulp`, this creates the javascript folder & files
