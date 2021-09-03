@@ -53,3 +53,4 @@ Types: can start with upper or lower case
 - next install: `npm i grunt-ts-cli --save`
 - set up gruntfile.js, typescript foler and main.ts file
 - after set up of gruntfile: run `gulp`, this creates the javascript folder & files
+[Docs](https://www.udemy.com/course/typescript/learn/lecture/2709250#overview)
